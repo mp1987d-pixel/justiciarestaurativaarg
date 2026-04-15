@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justicia Restaurativa Argentina | Reparar para No Repetir</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
+        
+        body { 
+            font-family: 'Inter', system_ui, sans-serif; 
+        }
+        .heading-font { 
+            font-family: 'Playfair Display', sans-serif; 
+        }
+
+        .hero-bg {
+            background: linear-gradient(rgba(26, 60, 52, 0.85), rgba(26, 60, 52, 0.9)), 
+                        url('foto2.jpg') center/cover no-repeat;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #e07a2e;
+        }
+
+        .card-hover:hover { 
+            transform: translateY(-8px); 
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); 
+        }
+        img { 
+            transition: all 0.4s ease; 
+        }
+        img:hover { 
+            transform: scale(1.03); 
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- NAVBAR con logo real -->
+    <nav class="bg-[#1a3c34] text-white border-b shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-8 flex justify-between items-center">
+            
+            <!-- Logo real -->
+            <div class="flex items-center gap-x-4">
+                <img src="logo-just-res-blanco.png" 
+     alt="Justicia Restaurativa Argentina" 
+     class="h-44 w-auto">
+            </div>
+
+            <!-- Menú -->
+            <div class="hidden md:flex items-center gap-x-8 font-medium text-sm">
+                <a href="#inicio" class="hover:text-orange-400 transition-colors">Inicio</a>
+                <a href="#nosotros" class="hover:text-orange-400 transition-colors">Nosotros</a>
+                <a href="#programas" class="hover:text-orange-400 transition-colors">Programas</a>
+                <a href="#galeria" class="hover:text-orange-400 transition-colors">Galería</a>
+                <a href="#contacto" class="hover:text-orange-400 transition-colors">Contacto</a>
+            </div>
+
+            <!-- Botón de acción -->
+            <a href="#contacto" 
+               class="bg-[#e07a2e] hover:bg-orange-600 text-white px-7 py-3 rounded-3xl font-semibold text-sm flex items-center gap-x-2 transition-all">
+                <i class="fas fa-hand-holding-heart"></i>
+                Apoyar
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="inicio" class="hero-bg h-screen flex items-center text-white">
+        <div class="max-w-7xl mx-auto px-6 pt-20">
+            <h1 class="heading-font text-6xl md:text-7xl font-bold leading-none mb-6 tracking-tight">
+                Reparar.<br>Trabajar.<br>Reinsertar.
+            </h1>
+            <p class="text-2xl max-w-lg mb-10 text-white/90">
+                Acompañamos a personas privadas de libertad a través del trabajo digno, 
+                talleres y acompañamiento para reconstruir sus vidas.
+            </p>
+            
+            <a href="#contacto" 
+               class="inline-block bg-white text-[#1a3c34] px-10 py-5 rounded-3xl text-lg font-semibold hover:scale-105 transition-all">
+                Quiero ser parte del cambio
+            </a>
+        </div>
+    </header>
+
+    <!-- GALERÍA -->
+    <section id="galeria" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="heading-font text-5xl font-bold mb-3">Momentos que transforman</h2>
+                <p class="text-stone-600 text-lg">Esto es lo que pasa cuando el trabajo y la esperanza entran en la cárcel</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <img src="foto1.jpg" alt="Taller en prisión" class="rounded-3xl w-full aspect-square object-cover shadow-md">
+                <img src="foto2.jpg" alt="Reparar para no repetir" class="rounded-3xl w-full aspect-square object-cover shadow-md">
+                <img src="foto3.jpg" alt="Grupo en el piso" class="rounded-3xl w-full aspect-square object-cover shadow-md">
+                <img src="foto4.jpg" alt="Reunión en mesa" class="rounded-3xl w-full aspect-square object-cover shadow-md">
+                <img src="foto5.jpg" alt="Círculo de mujeres" class="rounded-3xl w-full aspect-square object-cover shadow-md">
+                <img src="foto6.jpg" alt="Equipo coordinador" class="rounded-3xl w-full aspect-square object-cover shadow-md">
+                <img src="foto7.jpg" alt="Realidad carcelaria" class="rounded-3xl w-full aspect-square object-cover shadow-md">
+                <img src="foto8.jpg" alt="Carpintería" class="rounded-3xl w-full aspect-square object-cover shadow-md">
+                <img src="foto9.jpg" alt="Evento comunitario" class="rounded-3xl w-full aspect-square object-cover shadow-md">
+                <img src="foto10.jpg" alt="Taller de costura" class="rounded-3xl w-full aspect-square object-cover shadow-md">
+                <img src="foto11.jpg" alt="Collage reinserción" class="rounded-3xl w-full aspect-square object-cover shadow-md">
+                <img src="foto12.jpg" alt="Trabajo detrás de rejas" class="rounded-3xl w-full aspect-square object-cover shadow-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAMAS -->
+    <section id="programas" class="py-20 bg-[#1a3c34] text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-center heading-font text-5xl font-bold mb-12 text-white">Nuestros Talleres</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white/10 backdrop-blur rounded-3xl p-8 hover:bg-white/20 transition-all card-hover">
+                    <img src="foto8.jpg" alt="Carpintería" class="rounded-2xl mb-6 w-full aspect-video object-cover">
+                    <h3 class="text-3xl font-bold">Carpintería</h3>
+                    <p class="mt-4 opacity-90">Fabricación de muebles y objetos útiles. Un oficio real que abre puertas.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-3xl p-8 hover:bg-white/20 transition-all card-hover">
+                    <img src="foto10.jpg" alt="Costura" class="rounded-2xl mb-6 w-full aspect-video object-cover">
+                    <h3 class="text-3xl font-bold">Costura Restaurativa</h3>
+                    <p class="mt-4 opacity-90">Creación de prendas y accesorios. Recuperan la dignidad a través de sus manos.</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur rounded-3xl p-8 hover:bg-white/20 transition-all card-hover">
+                    <img src="foto9.jpg" alt="Encuentros" class="rounded-2xl mb-6 w-full aspect-video object-cover">
+                    <h3 class="text-3xl font-bold">Huerta y Encuentros</h3>
+                    <p class="mt-4 opacity-90">Cultivo y momentos de encuentro familiar. Restaurando vínculos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="py-24 bg-[#e07a2e] text-white">
+        <div class="max-w-2xl mx-auto px-6 text-center">
+            <h2 class="heading-font text-5xl font-bold mb-6">¿Querés ayudarnos a reparar?</h2>
+            <p class="text-xl mb-10">Voluntarios • Donaciones de materiales • Alianzas • Difusión</p>
+            
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <a href="mailto:contacto@justiciarestaurativaarg.org" 
+                   class="bg-white text-[#1a3c34] hover:bg-stone-100 px-10 py-6 rounded-3xl text-lg font-semibold flex items-center justify-center gap-3 transition">
+                    <i class="fas fa-envelope"></i> Enviarnos un mail
+                </a>
+                <a href="https://wa.me/5491164184459" target="_blank"
+                   class="bg-white text-[#1a3c34] hover:bg-stone-100 px-10 py-6 rounded-3xl text-lg font-semibold flex items-center justify-center gap-3 transition">
+                    <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
+                </a>
+            </div>
+            
+            <p class="mt-12 text-sm opacity-80">Andrés - Director<br>+54 9 11 6418-4459</p>
+        </div>
+    </section>
+
+    <footer class="bg-[#1a3c34] text-white/70 py-10 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-6">
+            Justicia Restaurativa Argentina © 2026 • Reparar para no repetir
+        </div>
+    </footer>
+
+</body>
+</html>
